@@ -14,7 +14,8 @@ def new():
     if(request.method=='POST'):
         num1=int(request.json['num1'])
         num2=int(request.json['num2'])
-        s=num1*num2
+        num3 = int(request.json['num3'])
+        s=num1*num2*num3
         return jsonify(s)
 @app.route('/ss')
 def hello_world():
